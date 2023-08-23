@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonsense Network</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(-45deg, #1f1f1f, #222222, #202020, #303030);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* Center horizontally */
+            min-height: 100vh;
+            /* Change height to min-height */
+            position: relative;
+            /* Add this */
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .gradient-header {
+            background-color: #0f0f0f;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            z-index: 1;
+            max-width: 90%;
+            margin-top: 3rem;
+            /* Adjusted margin for centering */
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .button a,
+        .github-button a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #7289da;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            width: 200px;
+            /* Set a fixed width */
+            height: 20px;
+            /* Set a slightly shorter height */
+            transition: background-color 0.3s ease;
+        }
+
+        .button a:hover,
+        .github-button a:hover {
+            background-color: #5f6ca0;
+        }
+
+        .discord-logo,
+        .github-logo {
+            width: 25px;
+            margin-right: 10px;
+        }
+
+        .main-logo {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        .github-button a {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Header styles (duplicated from footer) */
+        .header {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #0f0f0f;
+            color: #fff;
+            position: absolute;
+            /* Change to absolute positioning */
+            top: 0;
+            width: 100%;
+        }
+
+        /* Add styles for the top border */
+        .header::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #0f0f0f;
+            color: #fff;
+            position: absolute;
+            /* Change to absolute positioning */
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Add styles for the top border */
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+<div class="header" style="display: flex; justify-content: center; align-items: center;">
+    <img class="main-logo" src="/images/favicon.jpg" style="margin-right: 10px;">
+    <h1 style="font-size: 2rem; display: inline-block; vertical-align: middle; margin: 0; font-weight: bold; text-align: left;">Moonsense Network</h1>
+</div>
+
+    <div class="gradient-header">
+        <h1 style="font-size: 3rem;">Coming Soon!</h1>
+        <div class="button-container">
+            <div class="button">
+                <a href="https://discord.gg/NMEtHdGvUW" target="_blank">
+                    <img class="discord-logo" src="/images/discord-logo.png"> Join our Discord
+                </a>
+            </div>
+            <div class="github-button">
+                <a href="https://github.com/moononsense" target="_blank">
+                    <img class="github-logo" src="/images/github-logo.png"> GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Moonsense Network. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
